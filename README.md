@@ -17,4 +17,10 @@ Conclusiones:
 El modelo que mejor se desempeñó fue XGB para tareas de clasificación binaria, logrando una puntuación F1 (Medida de precisión y sensibilidad a los datos) de 0,80 en los datos de prueba y sorprendentemente 0,84 en los datos de validación, lo que lo convierte en un modelo notablemente bueno.
 
 Con este modelo se redujeron las instancias en las que el modelo predijo una rescisión del contrato cuando el cliente realmente iba a permanecer, lo que puede ayudar a evitar ofrecer códigos promocionales a usuarios que no tienen intención de cambiar de proveedor.
-De manera similar, observamos que para el conjunto de pruebas, el número de verdaderos positivos disminuyó ligeramente, mientras que la detección de usuarios que cancelaron el contrato pero no fueron detectados por el modelo aumentó ligeramente.
+De manera similar, observamos que para el conjunto de pruebas, el número de verdaderos positivos (VP) disminuyó ligeramente, mientras que la detección de usuarios que cancelaron el contrato pero no fueron detectados por el modelo aumentó ligeramente (FP).
+
+-----------------------------------------------------------------------------------------------------------------------------
+VN (Verdadero Negativo) > Indica que el usuario permanece activo.
+FP (Falso Positivo) > Indica que el modelo predijo que un usuario canceló el servicio, pero el usuario permanece activo.
+VP (Verdadero Positivo) > Indica que el usuario canceló el servicio.
+FN (Falso Negativo) > Indica que el modelo predijo que un usuario permanece activo, pero el usuario canceló el servicio.
