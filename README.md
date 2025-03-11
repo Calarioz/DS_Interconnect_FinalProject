@@ -20,7 +20,7 @@ Con este modelo se redujeron las instancias en las que el modelo predijo una res
 De manera similar, observamos que para el conjunto de pruebas, el número de verdaderos positivos (VP) disminuyó ligeramente, mientras que la detección de usuarios que cancelaron el contrato pero no fueron detectados por el modelo aumentó ligeramente (FP).
 
 -----------------------------------------------------------------------------------------------------------------------------
-VN (Verdadero Negativo) > Indica que el usuario permanece activo.
-FP (Falso Positivo) > Indica que el modelo predijo que un usuario canceló el servicio, pero el usuario permanece activo.
-VP (Verdadero Positivo) > Indica que el usuario canceló el servicio.
-FN (Falso Negativo) > Indica que el modelo predijo que un usuario permanece activo, pero el usuario canceló el servicio.
+- VN (Verdadero Negativo) > Indica que el usuario permanece activo.
+- FP (Falso Positivo) > Indica que el modelo predijo que un usuario canceló el servicio, pero el usuario permanece activo.
+- VP* (Verdadero Positivo) > Indica que el usuario canceló el servicio.
+- FN** (Falso Negativo) > Indica que el modelo predijo que un usuario permanece activo, pero el usuario canceló el servicio.
